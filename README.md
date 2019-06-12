@@ -1,14 +1,14 @@
 1.解題邏輯
 
-a.用於有向圖的。
+a.  用於有向圖的。
 
-b.由於必須先找出out-degree, in-degree的部分，圖論中的一個定理表明，且圖的所有頂點的in-degree and out-degree相同時，圖形才具有Euler Tour，因此如果向圖加入其他路徑，能去達到in-degree and out-degree都足以做匹配。
+b.  由於必須先找出out-degree, in-degree的部分，圖論中的一個定理表明，且圖的所有頂點的in-degree and out-degree相同時，圖形才具有Euler Tour，因此如果向圖加入其他路徑，能去達到in-degree and out-degree都足以做匹配。
 
-c.通過加入其他路徑，我們的目標是平衡圖形的所有頂點的in-degree和out-degree，因為只有這樣才能存在Euler Tour。
+c.  通過加入其他路徑，我們的目標是平衡圖形的所有頂點的in-degree和out-degree，因為只有這樣才能存在Euler Tour。
 
-d.需要找的是最小的路徑，因此這匹配的過程中，必須要選擇最短的路徑去做match。
+d.  需要找的是最小的路徑，因此這匹配的過程中，必須要選擇最短的路徑去做match。
 
-e.我們依然要找出Euler Tour，因此使用了Hierholzer方法，那麼最佳的路徑的cost就會是Euler Tour的所有路徑的weight。
+e.  我們依然要找出Euler Tour，因此使用了Hierholzer方法，那麼最佳的路徑的cost就會是Euler Tour的所有路徑的weight。
 
 
 2.程式碼實作
