@@ -17,7 +17,7 @@ a.  創立一個topo.txt，也就是graph的點跟邊以及weight的關係的文
 
 b.  head_tail_value這個class，主要是方便後面去做存取的動作。
 
-c.  做一個Degree的function，用來找每一個vertex的degree數，是利用out_degree-in_degree，一個Degree的function，用來找每一個vertex的degree數，利用out_degree - in_degree。
+c.  做一個Degree的function，用來找每一個vertex的degree數，利用out_degree - in_degree。
 
 d.  find_path這個function來找兩點之間的最短路徑值
 
