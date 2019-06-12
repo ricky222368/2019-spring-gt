@@ -33,5 +33,5 @@ min_path的值加上去，就會是所有路徑的weight也就是最後print出�
 
 3.執行
 
-只需在此資料夾內使用 make 即可編譯，得出執行檔main， 使用./main 直接執行，以及會產生outfile.txt
+只需在此資料夾內使用 make 即可編譯，得出執行檔main.out， 使用./main.out 直接執行，以及會產生outfile.txt
 輸出尤拉路徑的檔案。
