@@ -32,6 +32,7 @@ h.  利用do while來做判斷，while內的判斷主要是由next_permutation�
 i.  接著find_min_path又用到一次，不過因為是要找到path，所以沒有去改上面的find_min_path，而直接在使用一次並且加入其他的作用，size主要是判斷，那個iter指向最小值的位置，是和第一個位置差距多遠，找到後就去做connect的部分，之後再把P_ vector做初始化，重複做，看min有幾列(count_i)就做幾次。
 
 j.  利用Hierholzer’s Algorithm來做存取以及print出整個路徑，因為有一些int以及string的問題，所以我把它們做一些轉換(abc, 123的轉換)，以便處理。
+
 k.做後再創一個outfile去做吐檔的部分。
 
 l.  利用elist去算出所有edge的flowval值，不過因為有做connect的幾條edge他的value會是0，無法set value，因此額外加的那幾條edge的value會是0，在這邊我是一樣算出所有edge的value後，在將所算出的min_path的值加上去，就會是所有路徑的weight也就是最後print出來的cost值。
