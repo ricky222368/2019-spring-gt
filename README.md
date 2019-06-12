@@ -1,5 +1,6 @@
 1.解題邏輯
 
+這是一個用於有向圖的。
 首先，由於必須先找出out-degree, in-degree的部分，圖論中的一個定理表明，當且僅當圖的所有頂點的
 in-degree and out-degree相同時，圖形才具有Euler Tour，因此如果向圖加入其他路徑，能去達到in-degree
 out-degree都足以做匹配，就會有Euler Tour，但我們要找的是最小的路徑，因此這匹配的過程中，必須要選擇
