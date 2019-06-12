@@ -33,7 +33,7 @@ i.  接著find_min_path又用到一次，不過因為是要找到path，所以�
 
 j.  利用Hierholzer’s Algorithm來做存取以及print出整個路徑，因為有一些int以及string的問題，所以我把它們做一些轉換(abc, 123的轉換)，以便處理。
 
-k.做後再創一個outfile去做吐檔的部分。
+k.創一個outfile去做吐檔的部分。
 
 l.  利用elist去算出所有edge的flowval值，不過因為有做connect的幾條edge他的value會是0，無法set value，因此額外加的那幾條edge的value會是0，在這邊我是一樣算出所有edge的value後，在將所算出的min_path的值加上去，就會是所有路徑的weight也就是最後print出來的cost值。
 
