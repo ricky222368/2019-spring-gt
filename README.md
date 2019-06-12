@@ -29,3 +29,6 @@ find_min_path，而直接在使用一次並且加入其他的作用，size主要
 set value，因此額外加的那幾條edge的value會是0，在這邊我是一樣算出所有edge的value後，在將所算出的
 min_path的值加上去，就會是所有路徑的weight也就是最後print出來的cost值。
 
+3.執行的部分
+只需在此資料夾內使用 make 即可編譯，得出執行檔main， 使用./main 直接執行，以及會產生outfile.txt
+輸出尤拉路徑的檔案。
