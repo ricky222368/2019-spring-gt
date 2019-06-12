@@ -1,4 +1,5 @@
 1.解題邏輯
+
 首先，由於必須先找出out-degree, in-degree的部分，圖論中的一個定理表明，當且僅當圖的所有頂點的
 in-degree and out-degree相同時，圖形才具有Euler Tour，因此如果向圖加入其他路徑，能去達到in-degree
 out-degree都足以做匹配，就會有Euler Tour，但我們要找的是最小的路徑，因此這匹配的過程中，必須要選擇
@@ -7,6 +8,7 @@ out-degree都足以做匹配，就會有Euler Tour，但我們要找的是最小
 
 
 2.程式碼實作
+
 首先，我先做了head_tail_value這個class，主要是方便我後面去做存取的動作。
 然後做一個Degree的function，他是用來找每一個vertex的degree數，是利用out_degree-in_degree，一個
 Degree的function，他是用來找每一個vertex的degree數，是利用out_degree-in_degree，
@@ -29,6 +31,7 @@ find_min_path，而直接在使用一次並且加入其他的作用，size主要
 set value，因此額外加的那幾條edge的value會是0，在這邊我是一樣算出所有edge的value後，在將所算出的
 min_path的值加上去，就會是所有路徑的weight也就是最後print出來的cost值。
 
-3.執行的部分
+3.執行
+
 只需在此資料夾內使用 make 即可編譯，得出執行檔main， 使用./main 直接執行，以及會產生outfile.txt
 輸出尤拉路徑的檔案。
